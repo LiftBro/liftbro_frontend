@@ -1,5 +1,4 @@
 import React from 'react'
-import bodyFeatures from './bodyFeatures.svg'
 
 const Pick = () => {
   return (
