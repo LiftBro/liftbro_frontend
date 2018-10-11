@@ -26735,29 +26735,7 @@ var Home = function Home() {
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg"}],"components/bodyFeatures.svg.png":[function(require,module,exports) {
-module.exports = "/bodyFeatures.svg.4d41b1b4.png";
-},{}],"components/pick.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Pick = function Pick() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "Pick a muscle group"), _react.default.createElement("img", {
-    src: require('./bodyFeatures.svg.png')
-  }));
-};
-
-var _default = Pick;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./bodyFeatures.svg.png":"components/bodyFeatures.svg.png"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
 function _extends() {
   module.exports = _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -64290,7 +64268,207 @@ var _StatisticLabel2 = _interopRequireDefault(require("./views/Statistic/Statist
 var _StatisticValue2 = _interopRequireDefault(require("./views/Statistic/StatisticValue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./addons/Confirm":"../node_modules/semantic-ui-react/dist/es/addons/Confirm/index.js","./addons/MountNode":"../node_modules/semantic-ui-react/dist/es/addons/MountNode/index.js","./addons/Pagination":"../node_modules/semantic-ui-react/dist/es/addons/Pagination/index.js","./addons/Pagination/PaginationItem":"../node_modules/semantic-ui-react/dist/es/addons/Pagination/PaginationItem.js","./addons/Portal":"../node_modules/semantic-ui-react/dist/es/addons/Portal/index.js","./addons/Portal/PortalInner":"../node_modules/semantic-ui-react/dist/es/addons/Portal/PortalInner.js","./addons/Radio":"../node_modules/semantic-ui-react/dist/es/addons/Radio/index.js","./addons/Ref":"../node_modules/semantic-ui-react/dist/es/addons/Ref/index.js","./addons/Responsive":"../node_modules/semantic-ui-react/dist/es/addons/Responsive/index.js","./addons/Select":"../node_modules/semantic-ui-react/dist/es/addons/Select/index.js","./addons/TextArea":"../node_modules/semantic-ui-react/dist/es/addons/TextArea/index.js","./addons/TransitionablePortal":"../node_modules/semantic-ui-react/dist/es/addons/TransitionablePortal/index.js","./behaviors/Visibility":"../node_modules/semantic-ui-react/dist/es/behaviors/Visibility/index.js","./collections/Breadcrumb":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/index.js","./collections/Breadcrumb/BreadcrumbDivider":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbDivider.js","./collections/Breadcrumb/BreadcrumbSection":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js","./collections/Form":"../node_modules/semantic-ui-react/dist/es/collections/Form/index.js","./collections/Form/FormButton":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js","./collections/Form/FormCheckbox":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js","./collections/Form/FormDropdown":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormDropdown.js","./collections/Form/FormField":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormField.js","./collections/Form/FormGroup":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormGroup.js","./collections/Form/FormInput":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormInput.js","./collections/Form/FormRadio":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormRadio.js","./collections/Form/FormSelect":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormSelect.js","./collections/Form/FormTextArea":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js","./collections/Grid":"../node_modules/semantic-ui-react/dist/es/collections/Grid/index.js","./collections/Grid/GridColumn":"../node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js","./collections/Grid/GridRow":"../node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js","./collections/Menu":"../node_modules/semantic-ui-react/dist/es/collections/Menu/index.js","./collections/Menu/MenuHeader":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js","./collections/Menu/MenuItem":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js","./collections/Menu/MenuMenu":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js","./collections/Message":"../node_modules/semantic-ui-react/dist/es/collections/Message/index.js","./collections/Message/MessageContent":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js","./collections/Message/MessageHeader":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js","./collections/Message/MessageItem":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageItem.js","./collections/Message/MessageList":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js","./collections/Table":"../node_modules/semantic-ui-react/dist/es/collections/Table/index.js","./collections/Table/TableBody":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js","./collections/Table/TableCell":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js","./collections/Table/TableFooter":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableFooter.js","./collections/Table/TableHeader":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableHeader.js","./collections/Table/TableHeaderCell":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableHeaderCell.js","./collections/Table/TableRow":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js","./elements/Button/Button":"../node_modules/semantic-ui-react/dist/es/elements/Button/Button.js","./elements/Button/ButtonContent":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js","./elements/Button/ButtonGroup":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js","./elements/Button/ButtonOr":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js","./elements/Container":"../node_modules/semantic-ui-react/dist/es/elements/Container/index.js","./elements/Divider":"../node_modules/semantic-ui-react/dist/es/elements/Divider/index.js","./elements/Flag":"../node_modules/semantic-ui-react/dist/es/elements/Flag/index.js","./elements/Header":"../node_modules/semantic-ui-react/dist/es/elements/Header/index.js","./elements/Header/HeaderContent":"../node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js","./elements/Header/HeaderSubheader":"../node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js","./elements/Icon":"../node_modules/semantic-ui-react/dist/es/elements/Icon/index.js","./elements/Icon/IconGroup":"../node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js","./elements/Image":"../node_modules/semantic-ui-react/dist/es/elements/Image/index.js","./elements/Image/ImageGroup":"../node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js","./elements/Input":"../node_modules/semantic-ui-react/dist/es/elements/Input/index.js","./elements/Label":"../node_modules/semantic-ui-react/dist/es/elements/Label/index.js","./elements/Label/LabelDetail":"../node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js","./elements/Label/LabelGroup":"../node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js","./elements/List":"../node_modules/semantic-ui-react/dist/es/elements/List/index.js","./elements/List/ListContent":"../node_modules/semantic-ui-react/dist/es/elements/List/ListContent.js","./elements/List/ListDescription":"../node_modules/semantic-ui-react/dist/es/elements/List/ListDescription.js","./elements/List/ListHeader":"../node_modules/semantic-ui-react/dist/es/elements/List/ListHeader.js","./elements/List/ListIcon":"../node_modules/semantic-ui-react/dist/es/elements/List/ListIcon.js","./elements/List/ListItem":"../node_modules/semantic-ui-react/dist/es/elements/List/ListItem.js","./elements/List/ListList":"../node_modules/semantic-ui-react/dist/es/elements/List/ListList.js","./elements/Loader":"../node_modules/semantic-ui-react/dist/es/elements/Loader/index.js","./elements/Rail":"../node_modules/semantic-ui-react/dist/es/elements/Rail/index.js","./elements/Reveal":"../node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js","./elements/Reveal/RevealContent":"../node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js","./elements/Segment":"../node_modules/semantic-ui-react/dist/es/elements/Segment/index.js","./elements/Segment/SegmentGroup":"../node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js","./elements/Step":"../node_modules/semantic-ui-react/dist/es/elements/Step/index.js","./elements/Step/StepContent":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepContent.js","./elements/Step/StepDescription":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepDescription.js","./elements/Step/StepGroup":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepGroup.js","./elements/Step/StepTitle":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepTitle.js","./modules/Accordion/Accordion":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/Accordion.js","./modules/Accordion/AccordionAccordion":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionAccordion.js","./modules/Accordion/AccordionContent":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionContent.js","./modules/Accordion/AccordionPanel":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionPanel.js","./modules/Accordion/AccordionTitle":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionTitle.js","./modules/Checkbox":"../node_modules/semantic-ui-react/dist/es/modules/Checkbox/index.js","./modules/Dimmer":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/index.js","./modules/Dimmer/DimmerDimmable":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerDimmable.js","./modules/Dimmer/DimmerInner":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerInner.js","./modules/Dropdown":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/index.js","./modules/Dropdown/DropdownDivider":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownDivider.js","./modules/Dropdown/DropdownHeader":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownHeader.js","./modules/Dropdown/DropdownItem":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownItem.js","./modules/Dropdown/DropdownMenu":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownMenu.js","./modules/Dropdown/DropdownSearchInput":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownSearchInput.js","./modules/Embed":"../node_modules/semantic-ui-react/dist/es/modules/Embed/index.js","./modules/Modal":"../node_modules/semantic-ui-react/dist/es/modules/Modal/index.js","./modules/Modal/ModalActions":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalActions.js","./modules/Modal/ModalContent":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalContent.js","./modules/Modal/ModalDescription":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalDescription.js","./modules/Modal/ModalHeader":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalHeader.js","./modules/Popup":"../node_modules/semantic-ui-react/dist/es/modules/Popup/index.js","./modules/Popup/PopupContent":"../node_modules/semantic-ui-react/dist/es/modules/Popup/PopupContent.js","./modules/Popup/PopupHeader":"../node_modules/semantic-ui-react/dist/es/modules/Popup/PopupHeader.js","./modules/Progress":"../node_modules/semantic-ui-react/dist/es/modules/Progress/index.js","./modules/Rating":"../node_modules/semantic-ui-react/dist/es/modules/Rating/index.js","./modules/Rating/RatingIcon":"../node_modules/semantic-ui-react/dist/es/modules/Rating/RatingIcon.js","./modules/Search":"../node_modules/semantic-ui-react/dist/es/modules/Search/index.js","./modules/Search/SearchCategory":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js","./modules/Search/SearchResult":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js","./modules/Search/SearchResults":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchResults.js","./modules/Sidebar":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/index.js","./modules/Sidebar/SidebarPushable":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPushable.js","./modules/Sidebar/SidebarPusher":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPusher.js","./modules/Sticky":"../node_modules/semantic-ui-react/dist/es/modules/Sticky/index.js","./modules/Tab":"../node_modules/semantic-ui-react/dist/es/modules/Tab/index.js","./modules/Tab/TabPane":"../node_modules/semantic-ui-react/dist/es/modules/Tab/TabPane.js","./modules/Transition":"../node_modules/semantic-ui-react/dist/es/modules/Transition/index.js","./modules/Transition/TransitionGroup":"../node_modules/semantic-ui-react/dist/es/modules/Transition/TransitionGroup.js","./views/Advertisement":"../node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js","./views/Card/Card":"../node_modules/semantic-ui-react/dist/es/views/Card/Card.js","./views/Card/CardContent":"../node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js","./views/Card/CardDescription":"../node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js","./views/Card/CardGroup":"../node_modules/semantic-ui-react/dist/es/views/Card/CardGroup.js","./views/Card/CardHeader":"../node_modules/semantic-ui-react/dist/es/views/Card/CardHeader.js","./views/Card/CardMeta":"../node_modules/semantic-ui-react/dist/es/views/Card/CardMeta.js","./views/Comment":"../node_modules/semantic-ui-react/dist/es/views/Comment/index.js","./views/Comment/CommentAction":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAction.js","./views/Comment/CommentActions":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentActions.js","./views/Comment/CommentAuthor":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAuthor.js","./views/Comment/CommentAvatar":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAvatar.js","./views/Comment/CommentContent":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentContent.js","./views/Comment/CommentGroup":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentGroup.js","./views/Comment/CommentMetadata":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentMetadata.js","./views/Comment/CommentText":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentText.js","./views/Feed":"../node_modules/semantic-ui-react/dist/es/views/Feed/index.js","./views/Feed/FeedContent":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedContent.js","./views/Feed/FeedDate":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedDate.js","./views/Feed/FeedEvent":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedEvent.js","./views/Feed/FeedExtra":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedExtra.js","./views/Feed/FeedLabel":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedLabel.js","./views/Feed/FeedLike":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedLike.js","./views/Feed/FeedMeta":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedMeta.js","./views/Feed/FeedSummary":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedSummary.js","./views/Feed/FeedUser":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js","./views/Item":"../node_modules/semantic-ui-react/dist/es/views/Item/index.js","./views/Item/ItemContent":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js","./views/Item/ItemDescription":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js","./views/Item/ItemExtra":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemExtra.js","./views/Item/ItemGroup":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemGroup.js","./views/Item/ItemHeader":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemHeader.js","./views/Item/ItemImage":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemImage.js","./views/Item/ItemMeta":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemMeta.js","./views/Statistic":"../node_modules/semantic-ui-react/dist/es/views/Statistic/index.js","./views/Statistic/StatisticGroup":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticGroup.js","./views/Statistic/StatisticLabel":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticLabel.js","./views/Statistic/StatisticValue":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticValue.js"}],"components/workouts.js":[function(require,module,exports) {
+},{"./addons/Confirm":"../node_modules/semantic-ui-react/dist/es/addons/Confirm/index.js","./addons/MountNode":"../node_modules/semantic-ui-react/dist/es/addons/MountNode/index.js","./addons/Pagination":"../node_modules/semantic-ui-react/dist/es/addons/Pagination/index.js","./addons/Pagination/PaginationItem":"../node_modules/semantic-ui-react/dist/es/addons/Pagination/PaginationItem.js","./addons/Portal":"../node_modules/semantic-ui-react/dist/es/addons/Portal/index.js","./addons/Portal/PortalInner":"../node_modules/semantic-ui-react/dist/es/addons/Portal/PortalInner.js","./addons/Radio":"../node_modules/semantic-ui-react/dist/es/addons/Radio/index.js","./addons/Ref":"../node_modules/semantic-ui-react/dist/es/addons/Ref/index.js","./addons/Responsive":"../node_modules/semantic-ui-react/dist/es/addons/Responsive/index.js","./addons/Select":"../node_modules/semantic-ui-react/dist/es/addons/Select/index.js","./addons/TextArea":"../node_modules/semantic-ui-react/dist/es/addons/TextArea/index.js","./addons/TransitionablePortal":"../node_modules/semantic-ui-react/dist/es/addons/TransitionablePortal/index.js","./behaviors/Visibility":"../node_modules/semantic-ui-react/dist/es/behaviors/Visibility/index.js","./collections/Breadcrumb":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/index.js","./collections/Breadcrumb/BreadcrumbDivider":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbDivider.js","./collections/Breadcrumb/BreadcrumbSection":"../node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js","./collections/Form":"../node_modules/semantic-ui-react/dist/es/collections/Form/index.js","./collections/Form/FormButton":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js","./collections/Form/FormCheckbox":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js","./collections/Form/FormDropdown":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormDropdown.js","./collections/Form/FormField":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormField.js","./collections/Form/FormGroup":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormGroup.js","./collections/Form/FormInput":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormInput.js","./collections/Form/FormRadio":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormRadio.js","./collections/Form/FormSelect":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormSelect.js","./collections/Form/FormTextArea":"../node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js","./collections/Grid":"../node_modules/semantic-ui-react/dist/es/collections/Grid/index.js","./collections/Grid/GridColumn":"../node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js","./collections/Grid/GridRow":"../node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js","./collections/Menu":"../node_modules/semantic-ui-react/dist/es/collections/Menu/index.js","./collections/Menu/MenuHeader":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js","./collections/Menu/MenuItem":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js","./collections/Menu/MenuMenu":"../node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js","./collections/Message":"../node_modules/semantic-ui-react/dist/es/collections/Message/index.js","./collections/Message/MessageContent":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js","./collections/Message/MessageHeader":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js","./collections/Message/MessageItem":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageItem.js","./collections/Message/MessageList":"../node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js","./collections/Table":"../node_modules/semantic-ui-react/dist/es/collections/Table/index.js","./collections/Table/TableBody":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js","./collections/Table/TableCell":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js","./collections/Table/TableFooter":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableFooter.js","./collections/Table/TableHeader":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableHeader.js","./collections/Table/TableHeaderCell":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableHeaderCell.js","./collections/Table/TableRow":"../node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js","./elements/Button/Button":"../node_modules/semantic-ui-react/dist/es/elements/Button/Button.js","./elements/Button/ButtonContent":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js","./elements/Button/ButtonGroup":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js","./elements/Button/ButtonOr":"../node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js","./elements/Container":"../node_modules/semantic-ui-react/dist/es/elements/Container/index.js","./elements/Divider":"../node_modules/semantic-ui-react/dist/es/elements/Divider/index.js","./elements/Flag":"../node_modules/semantic-ui-react/dist/es/elements/Flag/index.js","./elements/Header":"../node_modules/semantic-ui-react/dist/es/elements/Header/index.js","./elements/Header/HeaderContent":"../node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js","./elements/Header/HeaderSubheader":"../node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js","./elements/Icon":"../node_modules/semantic-ui-react/dist/es/elements/Icon/index.js","./elements/Icon/IconGroup":"../node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js","./elements/Image":"../node_modules/semantic-ui-react/dist/es/elements/Image/index.js","./elements/Image/ImageGroup":"../node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js","./elements/Input":"../node_modules/semantic-ui-react/dist/es/elements/Input/index.js","./elements/Label":"../node_modules/semantic-ui-react/dist/es/elements/Label/index.js","./elements/Label/LabelDetail":"../node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js","./elements/Label/LabelGroup":"../node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js","./elements/List":"../node_modules/semantic-ui-react/dist/es/elements/List/index.js","./elements/List/ListContent":"../node_modules/semantic-ui-react/dist/es/elements/List/ListContent.js","./elements/List/ListDescription":"../node_modules/semantic-ui-react/dist/es/elements/List/ListDescription.js","./elements/List/ListHeader":"../node_modules/semantic-ui-react/dist/es/elements/List/ListHeader.js","./elements/List/ListIcon":"../node_modules/semantic-ui-react/dist/es/elements/List/ListIcon.js","./elements/List/ListItem":"../node_modules/semantic-ui-react/dist/es/elements/List/ListItem.js","./elements/List/ListList":"../node_modules/semantic-ui-react/dist/es/elements/List/ListList.js","./elements/Loader":"../node_modules/semantic-ui-react/dist/es/elements/Loader/index.js","./elements/Rail":"../node_modules/semantic-ui-react/dist/es/elements/Rail/index.js","./elements/Reveal":"../node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js","./elements/Reveal/RevealContent":"../node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js","./elements/Segment":"../node_modules/semantic-ui-react/dist/es/elements/Segment/index.js","./elements/Segment/SegmentGroup":"../node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js","./elements/Step":"../node_modules/semantic-ui-react/dist/es/elements/Step/index.js","./elements/Step/StepContent":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepContent.js","./elements/Step/StepDescription":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepDescription.js","./elements/Step/StepGroup":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepGroup.js","./elements/Step/StepTitle":"../node_modules/semantic-ui-react/dist/es/elements/Step/StepTitle.js","./modules/Accordion/Accordion":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/Accordion.js","./modules/Accordion/AccordionAccordion":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionAccordion.js","./modules/Accordion/AccordionContent":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionContent.js","./modules/Accordion/AccordionPanel":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionPanel.js","./modules/Accordion/AccordionTitle":"../node_modules/semantic-ui-react/dist/es/modules/Accordion/AccordionTitle.js","./modules/Checkbox":"../node_modules/semantic-ui-react/dist/es/modules/Checkbox/index.js","./modules/Dimmer":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/index.js","./modules/Dimmer/DimmerDimmable":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerDimmable.js","./modules/Dimmer/DimmerInner":"../node_modules/semantic-ui-react/dist/es/modules/Dimmer/DimmerInner.js","./modules/Dropdown":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/index.js","./modules/Dropdown/DropdownDivider":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownDivider.js","./modules/Dropdown/DropdownHeader":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownHeader.js","./modules/Dropdown/DropdownItem":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownItem.js","./modules/Dropdown/DropdownMenu":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownMenu.js","./modules/Dropdown/DropdownSearchInput":"../node_modules/semantic-ui-react/dist/es/modules/Dropdown/DropdownSearchInput.js","./modules/Embed":"../node_modules/semantic-ui-react/dist/es/modules/Embed/index.js","./modules/Modal":"../node_modules/semantic-ui-react/dist/es/modules/Modal/index.js","./modules/Modal/ModalActions":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalActions.js","./modules/Modal/ModalContent":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalContent.js","./modules/Modal/ModalDescription":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalDescription.js","./modules/Modal/ModalHeader":"../node_modules/semantic-ui-react/dist/es/modules/Modal/ModalHeader.js","./modules/Popup":"../node_modules/semantic-ui-react/dist/es/modules/Popup/index.js","./modules/Popup/PopupContent":"../node_modules/semantic-ui-react/dist/es/modules/Popup/PopupContent.js","./modules/Popup/PopupHeader":"../node_modules/semantic-ui-react/dist/es/modules/Popup/PopupHeader.js","./modules/Progress":"../node_modules/semantic-ui-react/dist/es/modules/Progress/index.js","./modules/Rating":"../node_modules/semantic-ui-react/dist/es/modules/Rating/index.js","./modules/Rating/RatingIcon":"../node_modules/semantic-ui-react/dist/es/modules/Rating/RatingIcon.js","./modules/Search":"../node_modules/semantic-ui-react/dist/es/modules/Search/index.js","./modules/Search/SearchCategory":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchCategory.js","./modules/Search/SearchResult":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchResult.js","./modules/Search/SearchResults":"../node_modules/semantic-ui-react/dist/es/modules/Search/SearchResults.js","./modules/Sidebar":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/index.js","./modules/Sidebar/SidebarPushable":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPushable.js","./modules/Sidebar/SidebarPusher":"../node_modules/semantic-ui-react/dist/es/modules/Sidebar/SidebarPusher.js","./modules/Sticky":"../node_modules/semantic-ui-react/dist/es/modules/Sticky/index.js","./modules/Tab":"../node_modules/semantic-ui-react/dist/es/modules/Tab/index.js","./modules/Tab/TabPane":"../node_modules/semantic-ui-react/dist/es/modules/Tab/TabPane.js","./modules/Transition":"../node_modules/semantic-ui-react/dist/es/modules/Transition/index.js","./modules/Transition/TransitionGroup":"../node_modules/semantic-ui-react/dist/es/modules/Transition/TransitionGroup.js","./views/Advertisement":"../node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js","./views/Card/Card":"../node_modules/semantic-ui-react/dist/es/views/Card/Card.js","./views/Card/CardContent":"../node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js","./views/Card/CardDescription":"../node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js","./views/Card/CardGroup":"../node_modules/semantic-ui-react/dist/es/views/Card/CardGroup.js","./views/Card/CardHeader":"../node_modules/semantic-ui-react/dist/es/views/Card/CardHeader.js","./views/Card/CardMeta":"../node_modules/semantic-ui-react/dist/es/views/Card/CardMeta.js","./views/Comment":"../node_modules/semantic-ui-react/dist/es/views/Comment/index.js","./views/Comment/CommentAction":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAction.js","./views/Comment/CommentActions":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentActions.js","./views/Comment/CommentAuthor":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAuthor.js","./views/Comment/CommentAvatar":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentAvatar.js","./views/Comment/CommentContent":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentContent.js","./views/Comment/CommentGroup":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentGroup.js","./views/Comment/CommentMetadata":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentMetadata.js","./views/Comment/CommentText":"../node_modules/semantic-ui-react/dist/es/views/Comment/CommentText.js","./views/Feed":"../node_modules/semantic-ui-react/dist/es/views/Feed/index.js","./views/Feed/FeedContent":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedContent.js","./views/Feed/FeedDate":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedDate.js","./views/Feed/FeedEvent":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedEvent.js","./views/Feed/FeedExtra":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedExtra.js","./views/Feed/FeedLabel":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedLabel.js","./views/Feed/FeedLike":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedLike.js","./views/Feed/FeedMeta":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedMeta.js","./views/Feed/FeedSummary":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedSummary.js","./views/Feed/FeedUser":"../node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js","./views/Item":"../node_modules/semantic-ui-react/dist/es/views/Item/index.js","./views/Item/ItemContent":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js","./views/Item/ItemDescription":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js","./views/Item/ItemExtra":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemExtra.js","./views/Item/ItemGroup":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemGroup.js","./views/Item/ItemHeader":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemHeader.js","./views/Item/ItemImage":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemImage.js","./views/Item/ItemMeta":"../node_modules/semantic-ui-react/dist/es/views/Item/ItemMeta.js","./views/Statistic":"../node_modules/semantic-ui-react/dist/es/views/Statistic/index.js","./views/Statistic/StatisticGroup":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticGroup.js","./views/Statistic/StatisticLabel":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticLabel.js","./views/Statistic/StatisticValue":"../node_modules/semantic-ui-react/dist/es/views/Statistic/StatisticValue.js"}],"components/cell.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Cell =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Cell, _Component);
+
+  function Cell() {
+    _classCallCheck(this, Cell);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Cell).apply(this, arguments));
+  }
+
+  _createClass(Cell, [{
+    key: "render",
+    value: function render() {
+      var exercise = this.props.exercise;
+      return _react.default.createElement(_semanticUiReact.Table.Cell, null, _react.default.createElement(_semanticUiReact.Label, {
+        ribbon: true
+      }, exercise));
+    }
+  }]);
+
+  return Cell;
+}(_react.Component);
+
+var _default = Cell;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"components/row.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _cell = _interopRequireDefault(require("./cell.js"));
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Row =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Row, _Component);
+
+  function Row() {
+    _classCallCheck(this, Row);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Row).apply(this, arguments));
+  }
+
+  _createClass(Row, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          leadColumnLabel = _this$props.leadColumnLabel,
+          dynamicColumns = _this$props.dynamicColumns;
+      if (!dynamicColumns) return null;
+      console.log("here", this.props);
+      return _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, leadColumnLabel), dynamicColumns.map(function (cellContent) {
+        return _react.default.createElement(_cell.default, _extends({}, cellContent, {
+          key: cellContent._id
+        }));
+      }));
+    }
+  }]);
+
+  return Row;
+}(_react.Component);
+
+var _default = Row;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./cell.js":"components/cell.js"}],"components/table.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _row = _interopRequireDefault(require("./row.js"));
+
+var _cell = _interopRequireDefault(require("./cell.js"));
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var GroupTable =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(GroupTable, _Component);
+
+  function GroupTable() {
+    _classCallCheck(this, GroupTable);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(GroupTable).apply(this, arguments));
+  }
+
+  _createClass(GroupTable, [{
+    key: "render",
+    value: function render() {
+      var data = this.props.data;
+      return _react.default.createElement("div", null, _react.default.createElement(_semanticUiReact.Table, {
+        className: "ui yellow table"
+      }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Muscle Groups"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Exercises"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Gofuckyourself"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
+        return _react.default.createElement(_row.default, _extends({}, rowData, {
+          key: rowData._id
+        }));
+      }))));
+    }
+  }]);
+
+  return GroupTable;
+}(_react.Component);
+
+var _default = GroupTable;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./row.js":"components/row.js","./cell.js":"components/cell.js"}],"components/bodyFeatures.svg.png":[function(require,module,exports) {
+module.exports = "/bodyFeatures.svg.4d41b1b4.png";
+},{}],"components/pick.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64300,21 +64478,49 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _semanticUiReact = require("semantic-ui-react");
+var _table = _interopRequireDefault(require("./table.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function formatDataForTable(data) {
+  return data.map(function (exercise) {
+    return {
+      leadColumnLabel: exercise.muscle,
+      dynamicColumns: exercise.exercises
+    };
+  });
+}
+
+var Pick = function Pick(props) {
+  var data = formatDataForTable(props.data);
+  return _react.default.createElement("div", null, _react.default.createElement("p", null, "Pick a muscle group"), _react.default.createElement("img", {
+    src: require('./bodyFeatures.svg.png')
+  }), _react.default.createElement(_table.default, {
+    data: data
+  }));
+};
+
+var _default = Pick;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./table.js":"components/table.js","./bodyFeatures.svg.png":"components/bodyFeatures.svg.png"}],"components/workouts.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Workouts = function Workouts() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "List of Workouts"), _react.default.createElement(_semanticUiReact.Table, {
-    className: "ui yellow table"
-  }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Header"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Header"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Header"))), _react.default.createElement(_semanticUiReact.Table.Body, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, _react.default.createElement(_semanticUiReact.Label, {
-    ribbon: true
-  }, "First")), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell"), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell")), _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell"), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell"), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell")), _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell"), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell"), _react.default.createElement(_semanticUiReact.Table.Cell, null, "Cell")))));
+  return _react.default.createElement("div", null, _react.default.createElement("p", null, "List of Workouts"));
 };
 
 var _default = Workouts;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"components/error.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64376,9 +64582,13 @@ var _pick = _interopRequireDefault(require("./components/pick"));
 
 var _workouts = _interopRequireDefault(require("./components/workouts"));
 
+var _table = _interopRequireDefault(require("./components/table"));
+
 var _error = _interopRequireDefault(require("./components/error"));
 
 var _navigation = _interopRequireDefault(require("./components/navigation"));
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64414,7 +64624,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      muscleGroups: []
+      data: []
     };
     return _this;
   }
@@ -64424,36 +64634,30 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-      fetch(proxyUrl + 'http://afternoon-fjord-79118.herokuapp.com/api/groups').then(function (blob) {
+      fetch('http://afternoon-fjord-79118.herokuapp.com/api/groups').then(function (blob) {
         return blob.json();
       }).then(function (data) {
-        var muscleGroups = data.map(function (muscleObj) {
-          var mgId = {
-            name: muscleObj.muscle,
-            id: muscleObj._id
-          };
-          return mgId;
-        });
-
         _this2.setState({
-          muscleGroups: muscleGroups
+          data: data
         });
-
-        console.log(_this2.state);
       });
-    } // exercises: Array(7), _id: "5bbcfd508151c71d101b6e81", muscle: "Legs", __v: 1
-
+    }
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement(_navigation.default, null), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         path: "/",
         component: _home.default,
         exact: true
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/pick",
-        component: _pick.default
+        render: function render(props) {
+          return _react.default.createElement(_pick.default, _extends({}, _this3.state, {
+            isAuthed: true
+          }));
+        }
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/workouts",
         component: _workouts.default
@@ -64469,7 +64673,7 @@ function (_Component) {
 ;
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./components/home":"components/home.js","./components/pick":"components/pick.js","./components/workouts":"components/workouts.js","./components/error":"components/error.js","./components/navigation":"components/navigation.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./components/home":"components/home.js","./components/pick":"components/pick.js","./components/workouts":"components/workouts.js","./components/table":"components/table.js","./components/error":"components/error.js","./components/navigation":"components/navigation.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("/styles.scss");

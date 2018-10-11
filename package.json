@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/alison-morgan/liftbro_frontend#readme",
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -29,7 +29,9 @@
     "src": "^1.1.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "cssnano": "^4.1.4",
     "semantic-ui-react": "^0.82.5",
     "style-loader": "^0.23.1"
