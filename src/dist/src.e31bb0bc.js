@@ -64520,13 +64520,221 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-var Workouts = function Workouts() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "List of Workouts"));
-};
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var TimerInput =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(TimerInput, _React$Component);
+
+  function TimerInput() {
+    _classCallCheck(this, TimerInput);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(TimerInput).apply(this, arguments));
+  }
+
+  _createClass(TimerInput, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          marginLeft: 100
+        }
+      }, _react.default.createElement("h3", null, "How long you wanna swol?"), _react.default.createElement("input", {
+        type: "number",
+        value: this.props.value,
+        onChange: this.props.handleChange,
+        required: true
+      }));
+    }
+  }]);
+
+  return TimerInput;
+}(_react.default.Component);
+
+var Timer =
+/*#__PURE__*/
+function (_React$Component2) {
+  _inherits(Timer, _React$Component2);
+
+  function Timer() {
+    _classCallCheck(this, Timer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Timer).apply(this, arguments));
+  }
+
+  _createClass(Timer, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("h1", {
+        style: {
+          fontSize: 100,
+          marginLeft: 100
+        }
+      }, this.props.value, ":", this.props.seconds));
+    }
+  }]);
+
+  return Timer;
+}(_react.default.Component);
+
+var StartButton =
+/*#__PURE__*/
+function (_React$Component3) {
+  _inherits(StartButton, _React$Component3);
+
+  function StartButton() {
+    _classCallCheck(this, StartButton);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(StartButton).apply(this, arguments));
+  }
+
+  _createClass(StartButton, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          marginLeft: 130
+        }
+      }, _react.default.createElement("button", {
+        className: "btn btn-lg btn-success",
+        disabled: !this.props.value,
+        onClick: this.props.startCountDown
+      }, "Start"));
+    }
+  }]);
+
+  return StartButton;
+}(_react.default.Component);
+
+var Workouts =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(Workouts, _React$Component4);
+
+  function Workouts(props) {
+    var _this;
+
+    _classCallCheck(this, Workouts);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Workouts).call(this, props));
+    _this.state = {
+      seconds: '00',
+      value: '',
+      isClicked: false
+    };
+    _this.secondsRemaining;
+    _this.intervalHandle;
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.startCountDown = _this.startCountDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.tick = _this.tick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(Workouts, [{
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "tick",
+    value: function tick() {
+      var min = Math.floor(this.secondsRemaining / 60);
+      var sec = this.secondsRemaining - min * 60;
+      this.setState({
+        value: min,
+        seconds: sec
+      });
+
+      if (sec < 10) {
+        this.setState({
+          seconds: "0" + this.state.seconds
+        });
+      }
+
+      if (min < 10) {
+        this.setState({
+          value: "0" + min
+        });
+      }
+
+      if (min === 0 & sec === 0) {
+        clearInterval(this.intervalHandle);
+      }
+
+      this.secondsRemaining--;
+    }
+  }, {
+    key: "startCountDown",
+    value: function startCountDown() {
+      this.intervalHandle = setInterval(this.tick, 1000);
+      var time = this.state.value;
+      this.secondsRemaining = time * 60;
+      this.setState({
+        isClicked: true
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var clicked = this.state.isClicked;
+
+      if (clicked) {
+        return _react.default.createElement("div", null, _react.default.createElement("div", {
+          className: "row"
+        }, _react.default.createElement("div", {
+          className: "col-md-4"
+        }), _react.default.createElement("div", {
+          className: "col-md-4"
+        }, _react.default.createElement(Timer, {
+          value: this.state.value,
+          seconds: this.state.seconds
+        }))));
+      } else {
+        return _react.default.createElement("div", null, _react.default.createElement("div", {
+          className: "row"
+        }, _react.default.createElement("div", {
+          className: "col-md-4"
+        }), _react.default.createElement("div", {
+          className: "col-md-4"
+        }, _react.default.createElement(TimerInput, {
+          value: this.state.value,
+          handleChange: this.handleChange
+        }), _react.default.createElement(Timer, {
+          value: this.state.value,
+          seconds: this.state.seconds
+        }), _react.default.createElement(StartButton, {
+          startCountDown: this.startCountDown,
+          value: this.state.value
+        }))));
+      }
+    }
+  }]);
+
+  return Workouts;
+}(_react.default.Component);
 
 var _default = Workouts;
 exports.default = _default;
