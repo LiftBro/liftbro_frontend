@@ -10,7 +10,7 @@ class Row extends Component {
     console.log("here", this.props)
 
     return (
-      <Table.Row>
+      <Table.Row >
         <Table.Cell>{leadColumnLabel}</Table.Cell>
           {dynamicColumns.map(cellContent => <Cell {...cellContent} key={cellContent._id}/>)}
       </Table.Row>

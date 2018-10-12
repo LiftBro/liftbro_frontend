@@ -2,21 +2,19 @@ import React, {Component } from 'react';
 import { Icon, Label, Menu, Table} from 'semantic-ui-react';
 import Row from './row.js';
 import Cell from './cell.js'
-
+import { Redirect } from 'react-router-dom'
 
 class GroupTable extends Component {
-
 
   render() {
     const {data} = this.props;
     return (
   <div>
-    <Table className="ui yellow table">
+    <Table className="ui selectable large inverted teal table segment">
       <Table.Header>
         <Table.Row>
-          <Table.HeaderCell>Muscle Groups</Table.HeaderCell>
-          <Table.HeaderCell>Exercises</Table.HeaderCell>
-          <Table.HeaderCell>Gofuckyourself</Table.HeaderCell>
+          <Table.HeaderCell colSpan="4">Muscle Groups</Table.HeaderCell>
+          <Table.HeaderCell colSpan="8">Exercises</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
 

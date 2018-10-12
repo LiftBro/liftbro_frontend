@@ -26,9 +26,6 @@ componentDidMount() {
 
 }
 
-
-
-
   render() {
     return (
       <BrowserRouter>

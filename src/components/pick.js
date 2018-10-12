@@ -17,13 +17,11 @@ function formatDataForTable(data) {
   })
 }
 
-
 const Pick = (props) => {
   const data = formatDataForTable(props.data)
   return (
     <div>
-      <p>Pick a muscle group</p>
-      <img src={require('./bodyFeatures.svg.png')} />
+      {/* <img src={require('./bodyFeatures.svg.png')} /> */}
       <GroupTable data={data}/>
     </div>
   )

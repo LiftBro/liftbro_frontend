@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,12 +171,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/object-assign/index.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/object-assign/index.js":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -64300,6 +64300,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function getLabel() {}
+
 var Cell =
 /*#__PURE__*/
 function (_Component) {
@@ -64314,10 +64316,8 @@ function (_Component) {
   _createClass(Cell, [{
     key: "render",
     value: function render() {
-      var exercise = this.props.exercise;
-      return _react.default.createElement(_semanticUiReact.Table.Cell, null, _react.default.createElement(_semanticUiReact.Label, {
-        ribbon: true
-      }, exercise));
+      var label = this.props.label;
+      return _react.default.createElement(_semanticUiReact.Table.Cell, null, getLabel(), _react.default.createElement(_semanticUiReact.Label, null, label));
     }
   }]);
 
@@ -64340,13 +64340,13 @@ var _semanticUiReact = require("semantic-ui-react");
 
 var _cell = _interopRequireDefault(require("./cell.js"));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -64412,13 +64412,15 @@ var _row = _interopRequireDefault(require("./row.js"));
 
 var _cell = _interopRequireDefault(require("./cell.js"));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -64452,8 +64454,12 @@ function (_Component) {
     value: function render() {
       var data = this.props.data;
       return _react.default.createElement("div", null, _react.default.createElement(_semanticUiReact.Table, {
-        className: "ui yellow table"
-      }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Muscle Groups"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Exercises"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Gofuckyourself"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
+        className: "ui selectable large inverted teal table segment"
+      }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, {
+        colSpan: "4"
+      }, "Muscle Groups"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, {
+        colSpan: "8"
+      }, "Exercises"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
         return _react.default.createElement(_row.default, _extends({}, rowData, {
           key: rowData._id
         }));
@@ -64466,9 +64472,7 @@ function (_Component) {
 
 var _default = GroupTable;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./row.js":"components/row.js","./cell.js":"components/cell.js"}],"components/bodyFeatures.svg.png":[function(require,module,exports) {
-module.exports = "/bodyFeatures.svg.4d41b1b4.png";
-},{}],"components/pick.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./row.js":"components/row.js","./cell.js":"components/cell.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"components/pick.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64482,27 +64486,33 @@ var _table = _interopRequireDefault(require("./table.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function formatDataForTable(data) {
-  return data.map(function (exercise) {
-    return {
-      leadColumnLabel: exercise.muscle,
-      dynamicColumns: exercise.exercises
-    };
+  return data.map(function (muscleGroup) {
+    return _objectSpread({
+      leadColumnLabel: muscleGroup.muscle,
+      dynamicColumns: muscleGroup.exercises.map(function (exercise) {
+        return _objectSpread({
+          label: exercise.exercise
+        }, exercise);
+      })
+    }, muscleGroup);
   });
 }
 
 var Pick = function Pick(props) {
   var data = formatDataForTable(props.data);
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "Pick a muscle group"), _react.default.createElement("img", {
-    src: require('./bodyFeatures.svg.png')
-  }), _react.default.createElement(_table.default, {
+  return _react.default.createElement("div", null, _react.default.createElement(_table.default, {
     data: data
   }));
 };
 
 var _default = Pick;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./table.js":"components/table.js","./bodyFeatures.svg.png":"components/bodyFeatures.svg.png"}],"components/workouts.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./table.js":"components/table.js"}],"components/workouts.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64554,10 +64564,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Navigation = function Navigation() {
   return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "link",
     to: "/"
   }, "Home"), _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "link",
     to: "/pick"
   }, "Pick"), _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "link",
     to: "/workouts"
   }, "Workouts"));
 };
@@ -64588,13 +64601,13 @@ var _error = _interopRequireDefault(require("./components/error"));
 
 var _navigation = _interopRequireDefault(require("./components/navigation"));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -64687,7 +64700,7 @@ var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById('root'));
-},{"/styles.scss":"styles.scss","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/styles.scss":"styles.scss","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -64714,7 +64727,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60109" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49901" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -64856,5 +64869,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.map
