@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,12 +171,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/object-assign/index.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/object-assign/index.js":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -26713,6 +26713,8 @@ var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"components/manMuscles.jpg":[function(require,module,exports) {
 module.exports = "/manMuscles.9beb3528.jpg";
+},{}],"components/liftbroLogo.png":[function(require,module,exports) {
+module.exports = "/liftbroLogo.452c0012.png";
 },{}],"components/home.js":[function(require,module,exports) {
 "use strict";
 
@@ -26725,17 +26727,24 @@ var _react = _interopRequireDefault(require("react"));
 
 var _manMuscles = _interopRequireDefault(require("./manMuscles.jpg"));
 
+var _liftbroLogo = _interopRequireDefault(require("./liftbroLogo.png"));
+
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "This Is Home"), _react.default.createElement("img", {
-    src: require('./manMuscles.jpg')
-  }));
+  return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/pick"
+  }, _react.default.createElement("img", {
+    className: "ui centered huge image",
+    src: require('./liftbroLogo.png')
+  })));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg","./liftbroLogo.png":"components/liftbroLogo.png","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
 function _extends() {
   module.exports = _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -64326,7 +64335,95 @@ function (_Component) {
 
 var _default = Cell;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"components/row.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"../node_modules/react-router/es/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "MemoryRouter", {
+  enumerable: true,
+  get: function () {
+    return _MemoryRouter2.default;
+  }
+});
+Object.defineProperty(exports, "Prompt", {
+  enumerable: true,
+  get: function () {
+    return _Prompt2.default;
+  }
+});
+Object.defineProperty(exports, "Redirect", {
+  enumerable: true,
+  get: function () {
+    return _Redirect2.default;
+  }
+});
+Object.defineProperty(exports, "Route", {
+  enumerable: true,
+  get: function () {
+    return _Route2.default;
+  }
+});
+Object.defineProperty(exports, "Router", {
+  enumerable: true,
+  get: function () {
+    return _Router2.default;
+  }
+});
+Object.defineProperty(exports, "StaticRouter", {
+  enumerable: true,
+  get: function () {
+    return _StaticRouter2.default;
+  }
+});
+Object.defineProperty(exports, "Switch", {
+  enumerable: true,
+  get: function () {
+    return _Switch2.default;
+  }
+});
+Object.defineProperty(exports, "generatePath", {
+  enumerable: true,
+  get: function () {
+    return _generatePath2.default;
+  }
+});
+Object.defineProperty(exports, "matchPath", {
+  enumerable: true,
+  get: function () {
+    return _matchPath2.default;
+  }
+});
+Object.defineProperty(exports, "withRouter", {
+  enumerable: true,
+  get: function () {
+    return _withRouter2.default;
+  }
+});
+
+var _MemoryRouter2 = _interopRequireDefault(require("./MemoryRouter"));
+
+var _Prompt2 = _interopRequireDefault(require("./Prompt"));
+
+var _Redirect2 = _interopRequireDefault(require("./Redirect"));
+
+var _Route2 = _interopRequireDefault(require("./Route"));
+
+var _Router2 = _interopRequireDefault(require("./Router"));
+
+var _StaticRouter2 = _interopRequireDefault(require("./StaticRouter"));
+
+var _Switch2 = _interopRequireDefault(require("./Switch"));
+
+var _generatePath2 = _interopRequireDefault(require("./generatePath"));
+
+var _matchPath2 = _interopRequireDefault(require("./matchPath"));
+
+var _withRouter2 = _interopRequireDefault(require("./withRouter"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./MemoryRouter":"../node_modules/react-router/es/MemoryRouter.js","./Prompt":"../node_modules/react-router/es/Prompt.js","./Redirect":"../node_modules/react-router/es/Redirect.js","./Route":"../node_modules/react-router/es/Route.js","./Router":"../node_modules/react-router/es/Router.js","./StaticRouter":"../node_modules/react-router/es/StaticRouter.js","./Switch":"../node_modules/react-router/es/Switch.js","./generatePath":"../node_modules/react-router/es/generatePath.js","./matchPath":"../node_modules/react-router/es/matchPath.js","./withRouter":"../node_modules/react-router/es/withRouter.js"}],"components/row.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64340,13 +64437,15 @@ var _semanticUiReact = require("semantic-ui-react");
 
 var _cell = _interopRequireDefault(require("./cell.js"));
 
+var _reactRouterDom = require("react-router-dom");
+
+var _reactRouter = require("react-router");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -64369,25 +64468,42 @@ var Row =
 function (_Component) {
   _inherits(Row, _Component);
 
-  function Row() {
+  function Row(props) {
     _classCallCheck(this, Row);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Row).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Row).call(this, props));
   }
 
   _createClass(Row, [{
+    key: "workoutList",
+    value: function workoutList(e) {
+      console.log(this.props.dynamicColumns);
+      e.preventDefault(); // this.props.dynamicColumns.map((exercises) => {
+      //   let names = {
+      //     exercise: exercises.label
+      //   }
+      //   console.log(names.exercise)
+      //   return exercises
+      // })
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this = this;
+
       var _this$props = this.props,
           leadColumnLabel = _this$props.leadColumnLabel,
           dynamicColumns = _this$props.dynamicColumns;
+      var exercises = this.props.exercises; // console.log(this.props)
+
       if (!dynamicColumns) return null;
-      console.log("here", this.props);
-      return _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, leadColumnLabel), dynamicColumns.map(function (cellContent) {
-        return _react.default.createElement(_cell.default, _extends({}, cellContent, {
-          key: cellContent._id
-        }));
-      }));
+      return _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, {
+        onClick: function onClick(e) {
+          return _this.workoutList(e);
+        }
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/workouts"
+      }, leadColumnLabel)));
     }
   }]);
 
@@ -64396,7 +64512,7 @@ function (_Component) {
 
 var _default = Row;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./cell.js":"components/cell.js"}],"components/table.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./cell.js":"components/cell.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react-router":"../node_modules/react-router/es/index.js"}],"components/table.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64443,10 +64559,10 @@ var GroupTable =
 function (_Component) {
   _inherits(GroupTable, _Component);
 
-  function GroupTable() {
+  function GroupTable(props) {
     _classCallCheck(this, GroupTable);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(GroupTable).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(GroupTable).call(this, props));
   }
 
   _createClass(GroupTable, [{
@@ -64457,9 +64573,7 @@ function (_Component) {
         className: "ui selectable large inverted teal table segment"
       }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, {
         colSpan: "4"
-      }, "Muscle Groups"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, {
-        colSpan: "8"
-      }, "Exercises"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
+      }, "Muscle Groups"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
         return _react.default.createElement(_row.default, _extends({}, rowData, {
           key: rowData._id
         }));
@@ -64522,6 +64636,12 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _semanticUiReact = require("semantic-ui-react");
+
+var _table = _interopRequireDefault(require("./table"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -64542,203 +64662,167 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var TimerInput =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(TimerInput, _React$Component);
-
-  function TimerInput() {
-    _classCallCheck(this, TimerInput);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(TimerInput).apply(this, arguments));
-  }
-
-  _createClass(TimerInput, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", {
-        style: {
-          marginLeft: 100
-        }
-      }, _react.default.createElement("h3", null, "How long you wanna swol?"), _react.default.createElement("input", {
-        type: "number",
-        value: this.props.value,
-        onChange: this.props.handleChange,
-        required: true
-      }));
-    }
-  }]);
-
-  return TimerInput;
-}(_react.default.Component);
-
-var Timer =
-/*#__PURE__*/
-function (_React$Component2) {
-  _inherits(Timer, _React$Component2);
-
-  function Timer() {
-    _classCallCheck(this, Timer);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Timer).apply(this, arguments));
-  }
-
-  _createClass(Timer, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h1", {
-        style: {
-          fontSize: 100,
-          marginLeft: 100
-        }
-      }, this.props.value, ":", this.props.seconds));
-    }
-  }]);
-
-  return Timer;
-}(_react.default.Component);
-
-var StartButton =
-/*#__PURE__*/
-function (_React$Component3) {
-  _inherits(StartButton, _React$Component3);
-
-  function StartButton() {
-    _classCallCheck(this, StartButton);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(StartButton).apply(this, arguments));
-  }
-
-  _createClass(StartButton, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", {
-        style: {
-          marginLeft: 130
-        }
-      }, _react.default.createElement("button", {
-        className: "btn btn-lg btn-success",
-        disabled: !this.props.value,
-        onClick: this.props.startCountDown
-      }, "Start"));
-    }
-  }]);
-
-  return StartButton;
-}(_react.default.Component);
-
+//
+// class TimerInput extends React.Component {
+//   render() {
+//     return (
+//       <div style={{marginLeft:100}}>
+//         <h3>How long you wanna swol?</h3>
+//         <input type="number" value={this.props.value} onChange={this.props.handleChange} required />
+//       </div>
+//     );
+//   }
+// }
+//
+// class Timer extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1 style={{ fontSize: 100, marginLeft:100 }}>{this.props.value}:{this.props.seconds}</h1>
+//       </div>
+//     );
+//   }
+// }
+//
+// class StartButton extends React.Component {
+//   render() {
+//     return (
+//       <div style={{ marginLeft: 130 }}>
+//         <button className="btn btn-lg btn-success" disabled={!this.props.value} onClick={this.props.startCountDown}>Start</button>
+//       </div>
+//
+//     );
+//   }
+// }
+//
+// class Workouts extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       seconds: '00',
+//       value: '',
+//       isClicked : false
+//     }
+//     this.secondsRemaining;
+//     this.intervalHandle;
+//     this.handleChange = this.handleChange.bind(this);
+//     this.startCountDown = this.startCountDown.bind(this);
+//     this.tick = this.tick.bind(this);
+//   }
+//
+//   handleChange(event) {
+//     this.setState({
+//       value: event.target.value
+//     })
+//   }
+//
+//   tick() {
+//     var min = Math.floor(this.secondsRemaining / 60);
+//     var sec = this.secondsRemaining - (min * 60);
+//
+//     this.setState({
+//       value: min,
+//       seconds: sec,
+//     })
+//
+//     if (sec < 10) {
+//       this.setState({
+//         seconds: "0" + this.state.seconds,
+//       })
+//
+//     }
+//
+//     if (min < 10) {
+//       this.setState({
+//         value: "0" + min,
+//       })
+//
+//     }
+//
+//     if (min === 0 & sec === 0) {
+//       clearInterval(this.intervalHandle);
+//     }
+//
+//
+//     this.secondsRemaining--
+//   }
+//
+//   startCountDown() {
+//     this.intervalHandle = setInterval(this.tick, 1000);
+//     let time = this.state.value;
+//     this.secondsRemaining = time * 60;
+//     this.setState({
+//       isClicked : true
+//     })
+//   }
+//
+//   render() {
+//     const clicked = this.state.isClicked;
+//     if(clicked){
+//     return (
+//       <div>
+//         <div className="row">
+//           <div className="col-md-4"></div>
+//           <div className="col-md-4">
+//             <Timer value={this.state.value} seconds={this.state.seconds} />
+//
+//           </div>
+//         </div>
+//       </div>
+//     );
+//     }else{
+//       return (
+//         <div>
+//           <div className="row">
+//             <div className="col-md-4"></div>
+//             <div className="col-md-4">
+//               <TimerInput value={this.state.value} handleChange={this.handleChange} />
+//               <Timer value={this.state.value} seconds={this.state.seconds} />
+//               <StartButton startCountDown={this.startCountDown} value={this.state.value} />
+//             </div>
+//           </div>
+//         </div>
+//       );
+//     }
 var Workouts =
 /*#__PURE__*/
-function (_React$Component4) {
-  _inherits(Workouts, _React$Component4);
+function (_React$Component) {
+  _inherits(Workouts, _React$Component);
 
   function Workouts(props) {
-    var _this;
-
     _classCallCheck(this, Workouts);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Workouts).call(this, props));
-    _this.state = {
-      seconds: '00',
-      value: '',
-      isClicked: false
-    };
-    _this.secondsRemaining;
-    _this.intervalHandle;
-    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.startCountDown = _this.startCountDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.tick = _this.tick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(Workouts).call(this, props));
   }
 
   _createClass(Workouts, [{
-    key: "handleChange",
-    value: function handleChange(event) {
-      this.setState({
-        value: event.target.value
-      });
-    }
-  }, {
-    key: "tick",
-    value: function tick() {
-      var min = Math.floor(this.secondsRemaining / 60);
-      var sec = this.secondsRemaining - min * 60;
-      this.setState({
-        value: min,
-        seconds: sec
-      });
-
-      if (sec < 10) {
-        this.setState({
-          seconds: "0" + this.state.seconds
-        });
-      }
-
-      if (min < 10) {
-        this.setState({
-          value: "0" + min
-        });
-      }
-
-      if (min === 0 & sec === 0) {
-        clearInterval(this.intervalHandle);
-      }
-
-      this.secondsRemaining--;
-    }
-  }, {
-    key: "startCountDown",
-    value: function startCountDown() {
-      this.intervalHandle = setInterval(this.tick, 1000);
-      var time = this.state.value;
-      this.secondsRemaining = time * 60;
-      this.setState({
-        isClicked: true
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
-      var clicked = this.state.isClicked;
-
-      if (clicked) {
-        return _react.default.createElement("div", null, _react.default.createElement("div", {
-          className: "row"
-        }, _react.default.createElement("div", {
-          className: "col-md-4"
-        }), _react.default.createElement("div", {
-          className: "col-md-4"
-        }, _react.default.createElement(Timer, {
-          value: this.state.value,
-          seconds: this.state.seconds
-        }))));
-      } else {
-        return _react.default.createElement("div", null, _react.default.createElement("div", {
-          className: "row"
-        }, _react.default.createElement("div", {
-          className: "col-md-4"
-        }), _react.default.createElement("div", {
-          className: "col-md-4"
-        }, _react.default.createElement(TimerInput, {
-          value: this.state.value,
-          handleChange: this.handleChange
-        }), _react.default.createElement(Timer, {
-          value: this.state.value,
-          seconds: this.state.seconds
-        }), _react.default.createElement(StartButton, {
-          startCountDown: this.startCountDown,
-          value: this.state.value
-        }))));
-      }
+      var data = this.props.data;
+      console.log(this.props);
+      return _react.default.createElement("table", {
+        className: "ui celled structured table"
+      }, _react.default.createElement("thead", null, _react.default.createElement("tr", null, _react.default.createElement("th", {
+        colSpan: "12",
+        rowSpan: "10"
+      }, "Workouts"))), _react.default.createElement("tbody", null, _react.default.createElement("tr", null, _react.default.createElement("td", null, "Workouts"), _react.default.createElement("td", {
+        className: "right aligned"
+      }), _react.default.createElement("td", {
+        className: "center aligned"
+      }, _react.default.createElement("i", {
+        className: "large green checkmark icon"
+      })))));
     }
   }]);
 
   return Workouts;
-}(_react.default.Component);
+}(_react.default.Component); // }
+// }
+
 
 var _default = Workouts;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/error.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./table":"components/table.js"}],"components/error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64771,14 +64855,17 @@ var _reactRouterDom = require("react-router-dom");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Navigation = function Navigation() {
-  return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.NavLink, {
-    className: "link",
+  return _react.default.createElement("div", {
+    className: "ui inverted borderless menu"
+  }, _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "item",
+    exact: true,
     to: "/"
   }, "Home"), _react.default.createElement(_reactRouterDom.NavLink, {
-    className: "link",
+    className: "item",
     to: "/pick"
   }, "Pick"), _react.default.createElement(_reactRouterDom.NavLink, {
-    className: "link",
+    className: "item",
     to: "/workouts"
   }, "Workouts"));
 };
@@ -64881,7 +64968,12 @@ function (_Component) {
         }
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/workouts",
-        component: _workouts.default
+        component: _workouts.default,
+        render: function render(props) {
+          return _react.default.createElement(_workouts.default, _extends({}, _this3.state, {
+            isAuthed: true
+          }));
+        }
       }), _react.default.createElement(_reactRouterDom.Route, {
         component: _error.default
       }))));
@@ -64908,7 +65000,7 @@ var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById('root'));
-},{"/styles.scss":"styles.scss","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/styles.scss":"styles.scss","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -64935,7 +65027,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49901" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55852" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -65077,5 +65169,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.map

@@ -5,16 +5,19 @@ import Cell from './cell.js'
 import { Redirect } from 'react-router-dom'
 
 class GroupTable extends Component {
-
+  constructor(props) {
+    super(props);
+}
   render() {
     const {data} = this.props;
     return (
   <div>
     <Table className="ui selectable large inverted teal table segment">
       <Table.Header>
-        <Table.Row>
+        {/* <Table.Row onClick={this.workoutList(event)}> */}
+        <Table.Row >
           <Table.HeaderCell colSpan="4">Muscle Groups</Table.HeaderCell>
-          <Table.HeaderCell colSpan="8">Exercises</Table.HeaderCell>
+          {/* <Table.HeaderCell colSpan="8">Exercises</Table.HeaderCell> */}
         </Table.Row>
       </Table.Header>
 

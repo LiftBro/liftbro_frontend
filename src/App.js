@@ -7,6 +7,7 @@ import Table from './components/table'
 import Error from './components/error'
 import Navigation from './components/navigation'
 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -34,10 +35,10 @@ componentDidMount() {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/pick"  render={(props) => <Pick {...this.state} isAuthed={true}/> }/>
-            <Route path="/workouts" component={Workouts} />
+            <Route path="/workouts" component={Workouts} render={(props) => <Workouts {...this.state} isAuthed={true}/>}/>
             <Route component={Error}/>
           </Switch>
-        </div>
+      </div>
       </BrowserRouter>
     );
   }

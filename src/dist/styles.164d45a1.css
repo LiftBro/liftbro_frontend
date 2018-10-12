@@ -1,11 +1,14 @@
 body {
-  margin-top: 10%; }
+  background-color: #383838;
+  min-height: 100%; }
 
 p {
   text-align: center; }
 
-.link {
-  color: black;
-  text-align: center;
-  margin-left: 20%;
-  font-size: 30px; }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.Site-content {
+  flex: 1; }

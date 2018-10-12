@@ -3,10 +3,10 @@ import { NavLink} from 'react-router-dom'
 
 const Navigation = () => {
   return (
-    <div>
-      <NavLink className="link" to="/">Home</NavLink>
-      <NavLink className="link" to="/pick">Pick</NavLink>
-      <NavLink className="link" to="/workouts">Workouts</NavLink>
+    <div className="ui inverted borderless menu">
+      <NavLink className="item" exact to="/">Home</NavLink>
+      <NavLink className="item" to="/pick">Pick</NavLink>
+      <NavLink className="item" to="/workouts" >Workouts</NavLink>
     </div>
   )
 }

@@ -26713,6 +26713,8 @@ var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"components/manMuscles.jpg":[function(require,module,exports) {
 module.exports = "/manMuscles.9beb3528.jpg";
+},{}],"components/liftbroLogo.png":[function(require,module,exports) {
+module.exports = "/liftbroLogo.452c0012.png";
 },{}],"components/home.js":[function(require,module,exports) {
 "use strict";
 
@@ -26725,17 +26727,24 @@ var _react = _interopRequireDefault(require("react"));
 
 var _manMuscles = _interopRequireDefault(require("./manMuscles.jpg"));
 
+var _liftbroLogo = _interopRequireDefault(require("./liftbroLogo.png"));
+
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "This Is Home"), _react.default.createElement("img", {
-    src: require('./manMuscles.jpg')
-  }));
+  return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/pick"
+  }, _react.default.createElement("img", {
+    className: "ui centered huge image",
+    src: require('./liftbroLogo.png')
+  })));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./manMuscles.jpg":"components/manMuscles.jpg","./liftbroLogo.png":"components/liftbroLogo.png","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"../node_modules/@babel/runtime/helpers/extends.js":[function(require,module,exports) {
 function _extends() {
   module.exports = _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -64300,9 +64309,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function getLabel() {
-  return _react.default.createElement("label", null, "My Label");
-}
+function getLabel() {}
 
 var Cell =
 /*#__PURE__*/
@@ -64319,9 +64326,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var label = this.props.label;
-      return _react.default.createElement(_semanticUiReact.Table.Cell, null, getLabel(), _react.default.createElement(_semanticUiReact.Label, {
-        ribbon: true
-      }, label));
+      return _react.default.createElement(_semanticUiReact.Table.Cell, null, getLabel(), _react.default.createElement(_semanticUiReact.Label, null, label));
     }
   }]);
 
@@ -64330,7 +64335,95 @@ function (_Component) {
 
 var _default = Cell;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"components/row.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js"}],"../node_modules/react-router/es/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "MemoryRouter", {
+  enumerable: true,
+  get: function () {
+    return _MemoryRouter2.default;
+  }
+});
+Object.defineProperty(exports, "Prompt", {
+  enumerable: true,
+  get: function () {
+    return _Prompt2.default;
+  }
+});
+Object.defineProperty(exports, "Redirect", {
+  enumerable: true,
+  get: function () {
+    return _Redirect2.default;
+  }
+});
+Object.defineProperty(exports, "Route", {
+  enumerable: true,
+  get: function () {
+    return _Route2.default;
+  }
+});
+Object.defineProperty(exports, "Router", {
+  enumerable: true,
+  get: function () {
+    return _Router2.default;
+  }
+});
+Object.defineProperty(exports, "StaticRouter", {
+  enumerable: true,
+  get: function () {
+    return _StaticRouter2.default;
+  }
+});
+Object.defineProperty(exports, "Switch", {
+  enumerable: true,
+  get: function () {
+    return _Switch2.default;
+  }
+});
+Object.defineProperty(exports, "generatePath", {
+  enumerable: true,
+  get: function () {
+    return _generatePath2.default;
+  }
+});
+Object.defineProperty(exports, "matchPath", {
+  enumerable: true,
+  get: function () {
+    return _matchPath2.default;
+  }
+});
+Object.defineProperty(exports, "withRouter", {
+  enumerable: true,
+  get: function () {
+    return _withRouter2.default;
+  }
+});
+
+var _MemoryRouter2 = _interopRequireDefault(require("./MemoryRouter"));
+
+var _Prompt2 = _interopRequireDefault(require("./Prompt"));
+
+var _Redirect2 = _interopRequireDefault(require("./Redirect"));
+
+var _Route2 = _interopRequireDefault(require("./Route"));
+
+var _Router2 = _interopRequireDefault(require("./Router"));
+
+var _StaticRouter2 = _interopRequireDefault(require("./StaticRouter"));
+
+var _Switch2 = _interopRequireDefault(require("./Switch"));
+
+var _generatePath2 = _interopRequireDefault(require("./generatePath"));
+
+var _matchPath2 = _interopRequireDefault(require("./matchPath"));
+
+var _withRouter2 = _interopRequireDefault(require("./withRouter"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./MemoryRouter":"../node_modules/react-router/es/MemoryRouter.js","./Prompt":"../node_modules/react-router/es/Prompt.js","./Redirect":"../node_modules/react-router/es/Redirect.js","./Route":"../node_modules/react-router/es/Route.js","./Router":"../node_modules/react-router/es/Router.js","./StaticRouter":"../node_modules/react-router/es/StaticRouter.js","./Switch":"../node_modules/react-router/es/Switch.js","./generatePath":"../node_modules/react-router/es/generatePath.js","./matchPath":"../node_modules/react-router/es/matchPath.js","./withRouter":"../node_modules/react-router/es/withRouter.js"}],"components/row.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64344,13 +64437,15 @@ var _semanticUiReact = require("semantic-ui-react");
 
 var _cell = _interopRequireDefault(require("./cell.js"));
 
+var _reactRouterDom = require("react-router-dom");
+
+var _reactRouter = require("react-router");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -64380,18 +64475,30 @@ function (_Component) {
   }
 
   _createClass(Row, [{
+    key: "workoutList",
+    // this.workoutList=this.workoutList.bind(this);
+    value: function workoutList(e) {
+      e.preventDefault();
+      console.log(this.props.exercises);
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this = this;
+
       var _this$props = this.props,
           leadColumnLabel = _this$props.leadColumnLabel,
-          dynamicColumns = _this$props.dynamicColumns;
+          dynamicColumns = _this$props.dynamicColumns; // console.log(this.props)
+
       if (!dynamicColumns) return null;
-      console.log("here", this.props);
-      return _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, null, leadColumnLabel), dynamicColumns.map(function (cellContent) {
-        return _react.default.createElement(_cell.default, _extends({}, cellContent, {
-          key: cellContent._id
-        }));
-      }));
+      return _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.Cell, {
+        onClick: function onClick(e) {
+          return _this.workoutList(e);
+        }
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/workouts",
+        params: {}
+      }, leadColumnLabel)));
     }
   }]);
 
@@ -64400,7 +64507,7 @@ function (_Component) {
 
 var _default = Row;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./cell.js":"components/cell.js"}],"components/table.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./cell.js":"components/cell.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react-router":"../node_modules/react-router/es/index.js"}],"components/table.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64415,6 +64522,8 @@ var _semanticUiReact = require("semantic-ui-react");
 var _row = _interopRequireDefault(require("./row.js"));
 
 var _cell = _interopRequireDefault(require("./cell.js"));
+
+var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64445,10 +64554,10 @@ var GroupTable =
 function (_Component) {
   _inherits(GroupTable, _Component);
 
-  function GroupTable() {
+  function GroupTable(props) {
     _classCallCheck(this, GroupTable);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(GroupTable).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(GroupTable).call(this, props));
   }
 
   _createClass(GroupTable, [{
@@ -64456,8 +64565,10 @@ function (_Component) {
     value: function render() {
       var data = this.props.data;
       return _react.default.createElement("div", null, _react.default.createElement(_semanticUiReact.Table, {
-        className: "ui yellow table"
-      }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Muscle Groups"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Exercises"), _react.default.createElement(_semanticUiReact.Table.HeaderCell, null, "Gofuckyourself"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
+        className: "ui selectable large inverted teal table segment"
+      }, _react.default.createElement(_semanticUiReact.Table.Header, null, _react.default.createElement(_semanticUiReact.Table.Row, null, _react.default.createElement(_semanticUiReact.Table.HeaderCell, {
+        colSpan: "4"
+      }, "Muscle Groups"))), _react.default.createElement(_semanticUiReact.Table.Body, null, data.map(function (rowData) {
         return _react.default.createElement(_row.default, _extends({}, rowData, {
           key: rowData._id
         }));
@@ -64470,9 +64581,7 @@ function (_Component) {
 
 var _default = GroupTable;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./row.js":"components/row.js","./cell.js":"components/cell.js"}],"components/bodyFeatures.svg.png":[function(require,module,exports) {
-module.exports = "/bodyFeatures.svg.4d41b1b4.png";
-},{}],"components/pick.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./row.js":"components/row.js","./cell.js":"components/cell.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"components/pick.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64505,16 +64614,14 @@ function formatDataForTable(data) {
 
 var Pick = function Pick(props) {
   var data = formatDataForTable(props.data);
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "Pick a muscle group"), _react.default.createElement("img", {
-    src: require('./bodyFeatures.svg.png')
-  }), _react.default.createElement(_table.default, {
+  return _react.default.createElement("div", null, _react.default.createElement(_table.default, {
     data: data
   }));
 };
 
 var _default = Pick;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./table.js":"components/table.js","./bodyFeatures.svg.png":"components/bodyFeatures.svg.png"}],"components/workouts.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./table.js":"components/table.js"}],"components/workouts.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64522,17 +64629,194 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+var _table = _interopRequireDefault(require("./table"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Workouts = function Workouts() {
-  return _react.default.createElement("div", null, _react.default.createElement("p", null, "List of Workouts"));
-};
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+//
+// class TimerInput extends React.Component {
+//   render() {
+//     return (
+//       <div style={{marginLeft:100}}>
+//         <h3>How long you wanna swol?</h3>
+//         <input type="number" value={this.props.value} onChange={this.props.handleChange} required />
+//       </div>
+//     );
+//   }
+// }
+//
+// class Timer extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1 style={{ fontSize: 100, marginLeft:100 }}>{this.props.value}:{this.props.seconds}</h1>
+//       </div>
+//     );
+//   }
+// }
+//
+// class StartButton extends React.Component {
+//   render() {
+//     return (
+//       <div style={{ marginLeft: 130 }}>
+//         <button className="btn btn-lg btn-success" disabled={!this.props.value} onClick={this.props.startCountDown}>Start</button>
+//       </div>
+//
+//     );
+//   }
+// }
+//
+// class Workouts extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       seconds: '00',
+//       value: '',
+//       isClicked : false
+//     }
+//     this.secondsRemaining;
+//     this.intervalHandle;
+//     this.handleChange = this.handleChange.bind(this);
+//     this.startCountDown = this.startCountDown.bind(this);
+//     this.tick = this.tick.bind(this);
+//   }
+//
+//   handleChange(event) {
+//     this.setState({
+//       value: event.target.value
+//     })
+//   }
+//
+//   tick() {
+//     var min = Math.floor(this.secondsRemaining / 60);
+//     var sec = this.secondsRemaining - (min * 60);
+//
+//     this.setState({
+//       value: min,
+//       seconds: sec,
+//     })
+//
+//     if (sec < 10) {
+//       this.setState({
+//         seconds: "0" + this.state.seconds,
+//       })
+//
+//     }
+//
+//     if (min < 10) {
+//       this.setState({
+//         value: "0" + min,
+//       })
+//
+//     }
+//
+//     if (min === 0 & sec === 0) {
+//       clearInterval(this.intervalHandle);
+//     }
+//
+//
+//     this.secondsRemaining--
+//   }
+//
+//   startCountDown() {
+//     this.intervalHandle = setInterval(this.tick, 1000);
+//     let time = this.state.value;
+//     this.secondsRemaining = time * 60;
+//     this.setState({
+//       isClicked : true
+//     })
+//   }
+//
+//   render() {
+//     const clicked = this.state.isClicked;
+//     if(clicked){
+//     return (
+//       <div>
+//         <div className="row">
+//           <div className="col-md-4"></div>
+//           <div className="col-md-4">
+//             <Timer value={this.state.value} seconds={this.state.seconds} />
+//
+//           </div>
+//         </div>
+//       </div>
+//     );
+//     }else{
+//       return (
+//         <div>
+//           <div className="row">
+//             <div className="col-md-4"></div>
+//             <div className="col-md-4">
+//               <TimerInput value={this.state.value} handleChange={this.handleChange} />
+//               <Timer value={this.state.value} seconds={this.state.seconds} />
+//               <StartButton startCountDown={this.startCountDown} value={this.state.value} />
+//             </div>
+//           </div>
+//         </div>
+//       );
+//     }
+var Workouts =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Workouts, _React$Component);
+
+  function Workouts() {
+    _classCallCheck(this, Workouts);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Workouts).apply(this, arguments));
+  }
+
+  _createClass(Workouts, [{
+    key: "render",
+    value: function render() {
+      console.log(this.props);
+      return _react.default.createElement("table", {
+        className: "ui celled structured table"
+      }, _react.default.createElement("thead", null, _react.default.createElement("tr", null, _react.default.createElement("th", {
+        colSpan: "12",
+        rowSpan: "10"
+      }, "Workouts"))), _react.default.createElement("tbody", null, _react.default.createElement("tr", null, _react.default.createElement("td", null, "Workouts"), _react.default.createElement("td", {
+        className: "right aligned"
+      }), _react.default.createElement("td", {
+        className: "center aligned"
+      }, _react.default.createElement("i", {
+        className: "large green checkmark icon"
+      })))));
+    }
+  }]);
+
+  return Workouts;
+}(_react.default.Component); // }
+// }
+
 
 var _default = Workouts;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/error.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","semantic-ui-react":"../node_modules/semantic-ui-react/dist/es/index.js","./table":"components/table.js"}],"components/error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -64565,16 +64849,88 @@ var _reactRouterDom = require("react-router-dom");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Navigation = function Navigation() {
-  return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.NavLink, {
+  return _react.default.createElement("div", {
+    className: "ui inverted borderless menu"
+  }, _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "item",
+    exact: true,
     to: "/"
   }, "Home"), _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "item",
     to: "/pick"
   }, "Pick"), _react.default.createElement(_reactRouterDom.NavLink, {
+    className: "item",
     to: "/workouts"
   }, "Workouts"));
 };
 
 var _default = Navigation;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"components/footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react.default.createElement("div", {
+    className: "ui inverted vertical footer segment"
+  }, _react.default.createElement("div", {
+    className: "ui container"
+  }, _react.default.createElement("div", {
+    className: "ui stackable inverted divided equal height stackable grid"
+  }, _react.default.createElement("div", {
+    className: "three wide column"
+  }, _react.default.createElement("h4", {
+    className: "ui inverted header"
+  }, "About"), _react.default.createElement("div", {
+    className: "ui inverted link list"
+  }, _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Sitemap"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Contact Us"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Religious Ceremonies"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Gazebo Plans"))), _react.default.createElement("div", {
+    className: "three wide column"
+  }, _react.default.createElement("h4", {
+    className: "ui inverted header"
+  }, "Services"), _react.default.createElement("div", {
+    className: "ui inverted link list"
+  }, _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Banana Pre-Order"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "DNA FAQ"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "How To Access"), _react.default.createElement("a", {
+    href: "#",
+    className: "item"
+  }, "Favorite X-Men"))), _react.default.createElement("div", {
+    className: "seven wide column"
+  }, _react.default.createElement("h4", {
+    className: "ui inverted header"
+  }, "Footer Header"), _react.default.createElement("p", null, "Extra space for a call to action inside the footer that could help re-engage users.")))));
+};
+
+var _default = Footer;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
@@ -64599,6 +64955,8 @@ var _table = _interopRequireDefault(require("./components/table"));
 var _error = _interopRequireDefault(require("./components/error"));
 
 var _navigation = _interopRequireDefault(require("./components/navigation"));
+
+var _footer = _interopRequireDefault(require("./components/footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64672,7 +65030,12 @@ function (_Component) {
         }
       }), _react.default.createElement(_reactRouterDom.Route, {
         path: "/workouts",
-        component: _workouts.default
+        component: _workouts.default,
+        render: function render(props) {
+          return _react.default.createElement(_workouts.default, _extends({}, _this3.state, {
+            isAuthed: true
+          }));
+        }
       }), _react.default.createElement(_reactRouterDom.Route, {
         component: _error.default
       }))));
@@ -64685,7 +65048,7 @@ function (_Component) {
 ;
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./components/home":"components/home.js","./components/pick":"components/pick.js","./components/workouts":"components/workouts.js","./components/table":"components/table.js","./components/error":"components/error.js","./components/navigation":"components/navigation.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./components/home":"components/home.js","./components/pick":"components/pick.js","./components/workouts":"components/workouts.js","./components/table":"components/table.js","./components/error":"components/error.js","./components/navigation":"components/navigation.js","./components/footer":"components/footer.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("/styles.scss");
@@ -64726,7 +65089,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56189" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56557" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,12 +171,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../semantic/dist/semantic.min.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../semantic/dist/semantic.min.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./themes/default/assets/images/flags.png":[["flags.e4cdb87d.png","../semantic/dist/themes/default/assets/images/flags.png"],"../semantic/dist/themes/default/assets/images/flags.png"],"./themes/default/assets/fonts/icons.eot":[["icons.2e283e45.eot","../semantic/dist/themes/default/assets/fonts/icons.eot"],"../semantic/dist/themes/default/assets/fonts/icons.eot"],"./themes/default/assets/fonts/icons.woff2":[["icons.8a863215.woff2","../semantic/dist/themes/default/assets/fonts/icons.woff2"],"../semantic/dist/themes/default/assets/fonts/icons.woff2"],"./themes/default/assets/fonts/icons.woff":[["icons.6a148e8d.woff","../semantic/dist/themes/default/assets/fonts/icons.woff"],"../semantic/dist/themes/default/assets/fonts/icons.woff"],"./themes/default/assets/fonts/icons.ttf":[["icons.5b74041f.ttf","../semantic/dist/themes/default/assets/fonts/icons.ttf"],"../semantic/dist/themes/default/assets/fonts/icons.ttf"],"./themes/default/assets/fonts/icons.svg":[["icons.1499bacb.svg","../semantic/dist/themes/default/assets/fonts/icons.svg"],"../semantic/dist/themes/default/assets/fonts/icons.svg"],"./themes/default/assets/fonts/outline-icons.eot":[["outline-icons.c305c0ab.eot","../semantic/dist/themes/default/assets/fonts/outline-icons.eot"],"../semantic/dist/themes/default/assets/fonts/outline-icons.eot"],"./themes/default/assets/fonts/outline-icons.woff2":[["outline-icons.b1715ba2.woff2","../semantic/dist/themes/default/assets/fonts/outline-icons.woff2"],"../semantic/dist/themes/default/assets/fonts/outline-icons.woff2"],"./themes/default/assets/fonts/outline-icons.woff":[["outline-icons.2485f7b5.woff","../semantic/dist/themes/default/assets/fonts/outline-icons.woff"],"../semantic/dist/themes/default/assets/fonts/outline-icons.woff"],"./themes/default/assets/fonts/outline-icons.ttf":[["outline-icons.f7a854f0.ttf","../semantic/dist/themes/default/assets/fonts/outline-icons.ttf"],"../semantic/dist/themes/default/assets/fonts/outline-icons.ttf"],"./themes/default/assets/fonts/outline-icons.svg":[["outline-icons.451bad49.svg","../semantic/dist/themes/default/assets/fonts/outline-icons.svg"],"../semantic/dist/themes/default/assets/fonts/outline-icons.svg"],"./themes/default/assets/fonts/brand-icons.eot":[["brand-icons.7071713c.eot","../semantic/dist/themes/default/assets/fonts/brand-icons.eot"],"../semantic/dist/themes/default/assets/fonts/brand-icons.eot"],"./themes/default/assets/fonts/brand-icons.woff2":[["brand-icons.34053dd5.woff2","../semantic/dist/themes/default/assets/fonts/brand-icons.woff2"],"../semantic/dist/themes/default/assets/fonts/brand-icons.woff2"],"./themes/default/assets/fonts/brand-icons.woff":[["brand-icons.a749490a.woff","../semantic/dist/themes/default/assets/fonts/brand-icons.woff"],"../semantic/dist/themes/default/assets/fonts/brand-icons.woff"],"./themes/default/assets/fonts/brand-icons.ttf":[["brand-icons.742b203d.ttf","../semantic/dist/themes/default/assets/fonts/brand-icons.ttf"],"../semantic/dist/themes/default/assets/fonts/brand-icons.ttf"],"./themes/default/assets/fonts/brand-icons.svg":[["brand-icons.166feb42.svg","../semantic/dist/themes/default/assets/fonts/brand-icons.svg"],"../semantic/dist/themes/default/assets/fonts/brand-icons.svg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./themes/default/assets/images/flags.png":[["flags.e4cdb87d.png","../semantic/dist/themes/default/assets/images/flags.png"],"../semantic/dist/themes/default/assets/images/flags.png"],"./themes/default/assets/fonts/icons.eot":[["icons.2e283e45.eot","../semantic/dist/themes/default/assets/fonts/icons.eot"],"../semantic/dist/themes/default/assets/fonts/icons.eot"],"./themes/default/assets/fonts/icons.woff2":[["icons.8a863215.woff2","../semantic/dist/themes/default/assets/fonts/icons.woff2"],"../semantic/dist/themes/default/assets/fonts/icons.woff2"],"./themes/default/assets/fonts/icons.woff":[["icons.6a148e8d.woff","../semantic/dist/themes/default/assets/fonts/icons.woff"],"../semantic/dist/themes/default/assets/fonts/icons.woff"],"./themes/default/assets/fonts/icons.ttf":[["icons.5b74041f.ttf","../semantic/dist/themes/default/assets/fonts/icons.ttf"],"../semantic/dist/themes/default/assets/fonts/icons.ttf"],"./themes/default/assets/fonts/icons.svg":[["icons.1499bacb.svg","../semantic/dist/themes/default/assets/fonts/icons.svg"],"../semantic/dist/themes/default/assets/fonts/icons.svg"],"./themes/default/assets/fonts/outline-icons.eot":[["outline-icons.c305c0ab.eot","../semantic/dist/themes/default/assets/fonts/outline-icons.eot"],"../semantic/dist/themes/default/assets/fonts/outline-icons.eot"],"./themes/default/assets/fonts/outline-icons.woff2":[["outline-icons.b1715ba2.woff2","../semantic/dist/themes/default/assets/fonts/outline-icons.woff2"],"../semantic/dist/themes/default/assets/fonts/outline-icons.woff2"],"./themes/default/assets/fonts/outline-icons.woff":[["outline-icons.2485f7b5.woff","../semantic/dist/themes/default/assets/fonts/outline-icons.woff"],"../semantic/dist/themes/default/assets/fonts/outline-icons.woff"],"./themes/default/assets/fonts/outline-icons.ttf":[["outline-icons.f7a854f0.ttf","../semantic/dist/themes/default/assets/fonts/outline-icons.ttf"],"../semantic/dist/themes/default/assets/fonts/outline-icons.ttf"],"./themes/default/assets/fonts/outline-icons.svg":[["outline-icons.451bad49.svg","../semantic/dist/themes/default/assets/fonts/outline-icons.svg"],"../semantic/dist/themes/default/assets/fonts/outline-icons.svg"],"./themes/default/assets/fonts/brand-icons.eot":[["brand-icons.7071713c.eot","../semantic/dist/themes/default/assets/fonts/brand-icons.eot"],"../semantic/dist/themes/default/assets/fonts/brand-icons.eot"],"./themes/default/assets/fonts/brand-icons.woff2":[["brand-icons.34053dd5.woff2","../semantic/dist/themes/default/assets/fonts/brand-icons.woff2"],"../semantic/dist/themes/default/assets/fonts/brand-icons.woff2"],"./themes/default/assets/fonts/brand-icons.woff":[["brand-icons.a749490a.woff","../semantic/dist/themes/default/assets/fonts/brand-icons.woff"],"../semantic/dist/themes/default/assets/fonts/brand-icons.woff"],"./themes/default/assets/fonts/brand-icons.ttf":[["brand-icons.742b203d.ttf","../semantic/dist/themes/default/assets/fonts/brand-icons.ttf"],"../semantic/dist/themes/default/assets/fonts/brand-icons.ttf"],"./themes/default/assets/fonts/brand-icons.svg":[["brand-icons.166feb42.svg","../semantic/dist/themes/default/assets/fonts/brand-icons.svg"],"../semantic/dist/themes/default/assets/fonts/brand-icons.svg"],"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -203,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49901" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55852" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -345,4 +345,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)

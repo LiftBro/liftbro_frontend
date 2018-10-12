@@ -10,7 +10,6 @@ function formatDataForTable(data) {
           label: exercise.exercise,
           ...exercise
         }
-
       }),
       ...muscleGroup
     }

@@ -1,11 +1,14 @@
 import React from 'react'
 import manMuscles from './manMuscles.jpg'
+import liftBro from './liftbroLogo.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
-      <p>This Is Home</p>
-      <img src={require('./manMuscles.jpg')} />
+      <Link to="/pick">
+      <img className="ui centered huge image" src={require('./liftbroLogo.png')} />
+      </Link>
     </div>
   );
 };
